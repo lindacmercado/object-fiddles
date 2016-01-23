@@ -256,6 +256,14 @@ function MakePerson(name, birthday, ssn) {
     return person;
 }
 
+// function MakePerson(name, birthday, ssn) {
+//     var person = {
+//         this.name = name,
+//         this.birthday = birthday,
+//         this.ssn = ssn
+//     }
+//     return person;
+// }
 
 
 
@@ -267,17 +275,19 @@ function MakePerson(name, birthday, ssn) {
 // Create a function called MakeCard which takes in all the data it needs to make a Credit Card object and 
 //returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
-function MakeCard() {
-    var cardInfo = {
-        type: "Mastercard",
-        color: "Sun and Moon",
-        expires: "Jan 1",
-        cardNum: "237653987"
-    }
-    return cardInfo;
-}
+
+function MakeCard(type, name, cardNum, expDate, billingAddress) {
+    // var cardInfo = {
+        this.type = type,
+        this.name = name,
+        this.cardNum = cardNum,
+        this.expDate = expDate,
+        this.billingAddress = billingAddress
+    // };
+    // return cardInfo;
+};
   
-  
+ 
   
 //NEXT PROBLEM
 
@@ -289,8 +299,7 @@ creditcard object as its second parameter. Have bindCard merge the two parameter
 contains all the properties from the person as well as the creditcard.
 */
 
-function bindCard(person, creditcard) {
-    
+function bindCard(person, card) {
 }
 
 
