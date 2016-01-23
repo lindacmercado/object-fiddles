@@ -247,25 +247,22 @@ methodCollection.logHello();
 // Create a function called MakePerson which takes in name, birthday, ssn as its parameters and returns a 
 //new object with all of the information that you passed in.
 
-function MakePerson(name, birthday, ssn) {
-    var person = {
-        name: "Tester",
-        birthday: "Nov 1",
-        ssn: "123456789"
-    }
-    return person;
-}
-
 // function MakePerson(name, birthday, ssn) {
 //     var person = {
-//         this.name = name,
-//         this.birthday = birthday,
-//         this.ssn = ssn
+//         name: "Tester",
+//         birthday: "Nov 1",
+//         ssn: "123456789"
 //     }
 //     return person;
 // }
 
-
+var MakePerson = function(name, birthday, ssn) {
+    return {
+        name: name,
+        birthday: birthday,
+        ssn:ssn
+    };
+};
 
 
 //NEXT PROBLEM
@@ -277,14 +274,13 @@ function MakePerson(name, birthday, ssn) {
 
 
 function MakeCard(type, name, cardNum, expDate, billingAddress) {
-    // var cardInfo = {
-        this.type = type,
-        this.name = name,
-        this.cardNum = cardNum,
-        this.expDate = expDate,
-        this.billingAddress = billingAddress
-    // };
-    // return cardInfo;
+    return {
+        type: type,
+        name: name,
+        cardNum: cardNum,
+        expDate: expDate,
+        billingAddress: billingAddress
+    };
 };
   
  
@@ -300,6 +296,9 @@ contains all the properties from the person as well as the creditcard.
 */
 
 function bindCard(person, card) {
+    return {
+        
+    }
 }
 
 
