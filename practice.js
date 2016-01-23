@@ -273,7 +273,7 @@ var MakePerson = function(name, birthday, ssn) {
 //returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
 
-function MakeCard(type, name, cardNum, expDate, billingAddress) {
+var MakeCard = function(type, name, cardNum, expDate, billingAddress) {
     return {
         type: type,
         name: name,
@@ -296,9 +296,12 @@ contains all the properties from the person as well as the creditcard.
 */
 
 function bindCard(person, card) {
-    return {
-        
+    var personCard = {};
+    for (var key in person) {
+        personCard[key] = person[key];
     }
-}
-
-
+    for (var key in card) {
+        personCard[key] = card[key];
+    }
+    return personCard;
+};
